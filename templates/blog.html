@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% load static %}
+  <div class="container mx-auto p-4">
+    <h1 class="text-4xl m-4 md:text-5xl text-black lg:text-6xl font-bold text-center mb-8">Latest Blog Posts</h1>
+    <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+      <!-- Blog Post 1 -->
+      <a href="https://www.technewsworld.com/section/tech-blog">
+        <div class=" bg-white p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+          <img src="{% static 'images/blog1.png' %}" alt="UI/UX Design Trends 2024" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h2 class="text-2xl font-bold mb-2">UI/UX Design Trends 2024</h2>
+          <p class="text-gray-600 mb-2">July 15, 2024</p>
+          <p class="text-gray-700">Discover the latest trends in UI/UX design for 2024 that will enhance user experience and engagement.</p>
+        </div>
+      </a>
+      <!-- Blog Post 2 -->
+      <a href="https://www.technewsworld.com/section/tech-blog">
+        <div class=" bg-white p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+        <img src="{% static 'images/blog2.png' %}" alt="Digital Marketing Strategies" class="w-full h-48 object-cover rounded-md mb-4" />
+        <h2 class="text-2xl font-bold mb-2">Effective Digital Marketing Strategies</h2>
+        <p class="text-gray-600 mb-2">July 12, 2024</p>
+        <p class="text-gray-700">Learn about the most effective digital marketing strategies to boost your online presence and drive traffic.</p>
+      </div>
+      </a>
+      <!-- Blog Post 3 -->
+      <a href="https://www.technewsworld.com/section/tech-blog">
+        <div class=" bg-white p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+        <img src="{% static 'images/blog3.png' %}" alt="Web Development Tools" class="w-full h-48 object-cover rounded-md mb-4" />
+        <h2 class="text-2xl font-bold mb-2">Top Web Development Tools in 2024</h2>
+        <p class="text-gray-600 mb-2">July 10, 2024</p>
+        <p class="text-gray-700">Explore the top web development tools of 2024 that will help you build robust and scalable websites.</p>
+      </div>
+      </a>
+      <!-- Blog Post 4 -->
+      <a href="https://www.technewsworld.com/section/tech-blog">
+        <div class=" bg-white p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+        <img src="{% static 'images/blog4.png' %}" alt="Mobile App Development" class="w-full h-48 object-cover rounded-md mb-4" />
+        <h2 class="text-2xl font-bold mb-2">Innovations in Mobile App Development</h2>
+        <p class="text-gray-600 mb-2">July 8, 2024</p>
+        <p class="text-gray-700">Stay updated with the latest innovations in mobile app development and create high-performance apps.</p>
+      </div>
+      </a>
+      <!-- Blog Post 5 -->
+      <a href="https://www.technewsworld.com/section/tech-blog">
+        <div class=" bg-white p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+        <img src="{% static 'images/blog5.png' %}" alt="SEO Best Practices" class="w-full h-48 object-cover rounded-md mb-4" />
+        <h2 class="text-2xl font-bold mb-2">SEO Best Practices for 2024</h2>
+        <p class="text-gray-600 mb-2">July 5, 2024</p>
+        <p class="text-gray-700">Learn the best SEO practices for 2024 to optimize your website and improve your search engine rankings.</p>
+      </div>
+      </a>
+      <!-- Blog Post 6 -->
+      <a href="https://www.technewsworld.com/section/tech-blog">
+        <div class=" bg-white p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+        <img src="{% static 'images/blog6.png' %}" alt="Content Creation Tips" class="w-full h-48 object-cover rounded-md mb-4" />
+        <h2 class="text-2xl font-bold mb-2">Content Creation Digital Agencies</h2>
+        <p class="text-gray-600 mb-2">July 3, 2024</p>
+        <p class="text-gray-700">Discover effective content creation tips to engage your audience and promote your brand effectively.</p>
+      </div>
+      </a>
+      <!-- Blog Post 7 -->
+      <a href="https://www.technewsworld.com/section/tech-blog">
+        <div class=" bg-white p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+        <img src="{% static 'images/blog7.png' %}" alt="Social Media Management Tools" class="w-full h-48 object-cover rounded-md mb-4" />
+        <h2 class="text-2xl font-bold mb-2">Best Social Media Management Tools</h2>
+        <p class="text-gray-600 mb-2">July 1, 2024</p>
+        <p class="text-gray-700">Explore the best social media management tools to streamline your social media efforts and grow your brand.</p>
+      </div>
+      </a>
+      <!-- Blog Post 8 -->
+      <a href="https://www.technewsworld.com/section/tech-blog">
+        <div class=" bg-white p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+        <img src="{% static 'images/blog8.png' %}" alt="Cloud Services Benefits" class="w-full h-48 object-cover rounded-md mb-4" />
+        <h2 class="text-2xl font-bold mb-2"> Cloud Services for Businesses</h2>
+        <p class="text-gray-600 mb-2">June 28, 2024</p>
+        <p class="text-gray-700">Understand the benefits of cloud services and how they can enhance your business operations.</p>
+      </div>
+      </a>
+      <!-- Blog Post 9 -->
+      <a href="https://www.technewsworld.com/section/tech-blog">
+        <div class=" bg-white p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+        <img src="{% static 'images/blog9.png' %}" alt="AI in Digital Marketing" class="w-full h-48 object-cover rounded-md mb-4" />
+        <h2 class="text-2xl font-bold mb-2">The Role of AI in Digital Marketing</h2>
+        <p class="text-gray-600 mb-2">June 25, 2024</p>
+        <p class="text-gray-700">Explore how AI is transforming digital marketing and how you can leverage it to gain a competitive edge.</p>
+      </div>
+      </a>
+    </div>
+  </div>
+{% endblock %}

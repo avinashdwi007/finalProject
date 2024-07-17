@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.6.3/smooth-scrollbar.css" integrity="sha512-6tAeD9DPLy1s8W9KQ2XndXwb7aEHEtJ1UygP7COdUzyNvjZz7km0GFOYk5g1ewkIJeYkUkCwckOQdFbXoDx/Fw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  </head>
+  <body>
+    {% include 'header.html' %}
+
+    <div class="">
+      {% block content %}
+
+      {% endblock %}
+    </div>
+
+    {% include 'footer.html' %}
+
+    <script src="{% static 'js/bundle.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+    <script>
+    document.getElementById('navbar-toggle').addEventListener('click', function() {
+    var navbar = document.getElementById('navbar-default');
+    navbar.classList.toggle('hidden');
+  });
+    </script>
+
+
+
+  </body>
+</html>
